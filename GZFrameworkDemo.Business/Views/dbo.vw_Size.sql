@@ -1,0 +1,8 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [dbo].[vw_Size]
+AS
+	SELECT * FROM dt_CommonDicData WHERE DataType='尺码'
+GO
