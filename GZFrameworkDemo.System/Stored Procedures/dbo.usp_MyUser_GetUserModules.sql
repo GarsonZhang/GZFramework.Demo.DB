@@ -30,7 +30,8 @@ BEGIN
 		IF (@Admin>0)--管理员
 		BEGIN
 			SELECT * FROM dbo.sys_Modules ORDER BY Sort
-			SELECT *,1073741823 AS UserAuthority FROM dbo.sys_ModulesFunction ORDER BY GroupIndex,ItemIndex	
+			SELECT *,1073741823 AS UserAuthority FROM dbo.sys_ModulesFunction ORDER BY Sort
+			
 		END
 		ELSE--非管理员
 		BEGIN
